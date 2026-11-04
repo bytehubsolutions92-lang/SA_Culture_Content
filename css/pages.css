@@ -1,0 +1,6 @@
+/* Extra styles for the multi-page layout. Load AFTER style.css. */
+.nav a[aria-current="page"]{font-weight:700;text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+.page-hero{padding:clamp(48px,8vw,96px) 0 clamp(24px,4vw,48px)}
+.page-hero h1{margin:0 0 12px}
+.home-tours{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;padding-block:clamp(32px,6vw,64px)}
+.home-tours > div:first-child{max-width:52ch}
