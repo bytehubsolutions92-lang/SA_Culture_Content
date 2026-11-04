@@ -5,17 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Meet SA Culture Content, a local guide offering cultural tours of Johannesburg, Soweto and Pretoria.">
 <title>About | SA Culture Content</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+<link rel="canonical" href="https://www.example.com/about.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="SA Culture Content">
+<meta property="og:title" content="About | SA Culture Content"><meta property="og:description" content="Meet SA Culture Content, a local guide offering cultural tours of Johannesburg, Soweto and Pretoria.">
+<meta property="og:url" content="https://www.example.com/about.html"><meta property="og:image" content="https://www.example.com/images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
 <header class="site-header">
 <a class="brand" href="index.html" aria-label="SA Culture Content home">
-<img src="./images/logo.jpeg" class="brand-mark" alt="" width="48" height="48">
+<img src="images/logo.jpeg" class="brand-mark" alt="" width="48" height="48">
 <span><strong>SA CULTURE</strong><small>CONTENT</small></span>
 </a>
-<button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-<nav class="nav" aria-label="Main">
+<button type="button" class="menu-toggle" aria-controls="mainNav" aria-label="Open navigation" aria-expanded="false">☰</button>
+<nav class="nav" id="mainNav" aria-label="Main">
 <a href="index.html">Home</a>
 <a href="tours.html">Tours &amp; Prices</a>
 <a href="about.html" aria-current="page">About</a>
@@ -38,7 +46,9 @@
 </div>
 <div>
 <p>From the history and energy of Soweto to the landmarks of Johannesburg and the wonders beyond the city, discover South Africa with a guide who helps bring every stop to life. Ask us about sightseeing, cultural experiences and photography opportunities during your trip.</p>
-<!-- TODO: add your own story, a photo of yourself, years of experience, languages spoken and any tourism registration. -->
+<img class="about-photo" src="images/portrait-placeholder.svg" alt="Placeholder: portrait of your guide" width="400" height="400">
+<p>PLACEHOLDER: Tell your story here: who you are, where you grew up, why you guide and what guests love about your tours.</p>
+<ul><li>PLACEHOLDER: Years of experience</li><li>PLACEHOLDER: Languages spoken</li><li>PLACEHOLDER: Tourism registration number</li></ul>
 </div>
 </section>
 
@@ -61,9 +71,8 @@
 </div>
 </section>
 </main>
-<footer><a class="footer-brand" href="index.html">SA CULTURE CONTENT</a><span>Explore • Experience • Remember</span><span>© <span id="year"></span> SA Culture Content</span></footer>
-<script src="js/script.js"></script>
+<footer><a class="footer-brand" href="index.html">SA CULTURE CONTENT</a><span><a href="tours.html">Tours</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a></span><span>© <span id="year"></span> SA Culture Content</span></footer>
 <script src="js/data.js"></script>
-<script src="js/main.js"></script>
+<script src="js/site.js"></script>
 </body>
 </html>

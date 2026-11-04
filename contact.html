@@ -5,17 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Contact SA Culture Content on WhatsApp to ask a question, check tour availability or arrange your Johannesburg and Soweto experience.">
 <title>Contact | SA Culture Content</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+<link rel="canonical" href="https://www.example.com/contact.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="SA Culture Content">
+<meta property="og:title" content="Contact | SA Culture Content"><meta property="og:description" content="Contact SA Culture Content on WhatsApp to ask a question, check tour availability or arrange your Johannesburg and Soweto experience.">
+<meta property="og:url" content="https://www.example.com/contact.html"><meta property="og:image" content="https://www.example.com/images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/pages.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I book?", "acceptedAnswer": {"@type": "Answer", "text": "PLACEHOLDER: Send an enquiry on WhatsApp, email or the form. We confirm availability and price."}}, {"@type": "Question", "name": "Where do you pick guests up?", "acceptedAnswer": {"@type": "Answer", "text": "PLACEHOLDER: Hotels and guesthouses in Johannesburg and Pretoria, and OR Tambo Airport."}}, {"@type": "Question", "name": "How and when do I pay?", "acceptedAnswer": {"@type": "Answer", "text": "PLACEHOLDER: Payment methods and deposit details."}}, {"@type": "Question", "name": "What is your cancellation policy?", "acceptedAnswer": {"@type": "Answer", "text": "PLACEHOLDER: Free cancellation up to 48 hours before the tour."}}, {"@type": "Question", "name": "Is it safe?", "acceptedAnswer": {"@type": "Answer", "text": "PLACEHOLDER: Describe your guide experience, vehicles and insurance."}}, {"@type": "Question", "name": "What should I bring?", "acceptedAnswer": {"@type": "Answer", "text": "PLACEHOLDER: Comfortable shoes, sunscreen, water and a camera."}}, {"@type": "Question", "name": "Are children welcome?", "acceptedAnswer": {"@type": "Answer", "text": "PLACEHOLDER: Yes, with details on age limits and child rates."}}]}</script>
 </head>
 <body>
 <header class="site-header">
 <a class="brand" href="index.html" aria-label="SA Culture Content home">
-<img src="./images/logo.jpeg" class="brand-mark" alt="" width="48" height="48">
+<img src="images/logo.jpeg" class="brand-mark" alt="" width="48" height="48">
 <span><strong>SA CULTURE</strong><small>CONTENT</small></span>
 </a>
-<button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-<nav class="nav" aria-label="Main">
+<button type="button" class="menu-toggle" aria-controls="mainNav" aria-label="Open navigation" aria-expanded="false">☰</button>
+<nav class="nav" id="mainNav" aria-label="Main">
 <a href="index.html">Home</a>
 <a href="tours.html">Tours &amp; Prices</a>
 <a href="about.html">About</a>
@@ -35,8 +44,8 @@
 <div class="section-wrap contact-inner">
 <div><p>Contact SA Culture Content to ask a question, check tour availability or arrange your experience. Tell us the tour you are interested in, your preferred date and the number of guests.</p></div>
 <div class="contact-actions">
-<a class="button button-primary" href="https://wa.me/27849081725?text=Hello%20SA%20Culture%20Content%2C%20I%20would%20like%20to%20enquire%20about%20a%20tour." target="_blank" rel="noopener">WhatsApp 084 908 1725</a>
-<a class="button button-light" href="https://wa.me/27614475266?text=Hello%20SA%20Culture%20Content%2C%20I%20would%20like%20to%20enquire%20about%20a%20tour." target="_blank" rel="noopener">WhatsApp 061 447 5266</a>
+<a class="button button-primary" href="https://wa.me/27849081725?text=Hello%20SA%20Culture%20Content%2C%20I%20would%20like%20to%20enquire%20about%20a%20tour." target="_blank" rel="noopener">WhatsApp 084 908 1725 · Bookings</a>
+<a class="button button-light" href="https://wa.me/27614475266?text=Hello%20SA%20Culture%20Content%2C%20I%20would%20like%20to%20enquire%20about%20a%20tour." target="_blank" rel="noopener">WhatsApp 061 447 5266 · Questions</a>
 </div>
 </div>
 </section>
@@ -59,23 +68,7 @@
 <div class="field field-wide">
 <label for="f-tour">Tour</label>
 <select id="f-tour" name="tour" required>
-<option value="">Choose a tour</option>
-<option value="Full Day Soweto Apartheid Museum and Lunch">Full Day Soweto Apartheid Museum and Lunch</option>
-<option value="Soweto Half Day Tour">Soweto Half Day Tour</option>
-<option value="Ultimate Johannesburg Tour">Ultimate Johannesburg Tour</option>
-<option value="Lion Park Half Day Tour">Lion Park Half Day Tour</option>
-<option value="Lesedi Cultural Village Tour">Lesedi Cultural Village Tour</option>
-<option value="Cradle of Humankind and Sterkfontein Caves Tour">Cradle of Humankind and Sterkfontein Caves Tour</option>
-<option value="Pretoria Half Day Tour">Pretoria Half Day Tour</option>
-<option value="Pretoria and Lion Park Tour">Pretoria and Lion Park Tour</option>
-<option value="Elephant and Monkey Sanctuaries Half Day Tour">Elephant and Monkey Sanctuaries Half Day Tour</option>
-<option value="Pretoria Diamond Mine Tour">Pretoria Diamond Mine Tour</option>
-<option value="Johannesburg City Tour">Johannesburg City Tour</option>
-<option value="Apartheid Museum Tour">Apartheid Museum Tour</option>
-<option value="Soweto and Lunch Tour">Soweto and Lunch Tour</option>
-<option value="Ann van Dyk Cheetah Centre Tour">Ann van Dyk Cheetah Centre Tour</option>
-<option value="Not sure yet / custom or photography request">Not sure yet / custom or photography request</option>
-</select>
+<option value="">Choose a tour</option></select>
 </div>
 <div class="field">
 <label for="f-date">Preferred date</label>
@@ -96,16 +89,17 @@
 <textarea id="f-message" name="message" rows="4" placeholder="Hotel or pick-up area, questions, photography..."></textarea>
 </div>
 <div class="field-wide form-actions">
-<button class="button button-primary" type="submit">Send on WhatsApp</button>
+<button class="button button-primary" type="button" id="apiBtn">Send enquiry</button>
+<button class="button button-outline" type="submit">Send on WhatsApp</button>
+<button class="button button-outline" type="button" id="emailBtn">Send by email instead</button>
 <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
 </div>
 </form>
 </section>
+<section class="faq section-wrap" id="faq"><p class="eyebrow">FAQ</p><h2>Good to know</h2><details><summary>How do I book?</summary><p>PLACEHOLDER: Send an enquiry on WhatsApp, email or the form. We confirm availability and price.</p></details><details><summary>Where do you pick guests up?</summary><p>PLACEHOLDER: Hotels and guesthouses in Johannesburg and Pretoria, and OR Tambo Airport.</p></details><details><summary>How and when do I pay?</summary><p>PLACEHOLDER: Payment methods and deposit details.</p></details><details><summary>What is your cancellation policy?</summary><p>PLACEHOLDER: Free cancellation up to 48 hours before the tour.</p></details><details><summary>Is it safe?</summary><p>PLACEHOLDER: Describe your guide experience, vehicles and insurance.</p></details><details><summary>What should I bring?</summary><p>PLACEHOLDER: Comfortable shoes, sunscreen, water and a camera.</p></details><details><summary>Are children welcome?</summary><p>PLACEHOLDER: Yes, with details on age limits and child rates.</p></details></section>
 </main>
-<footer><a class="footer-brand" href="index.html">SA CULTURE CONTENT</a><span>Explore • Experience • Remember</span><span>© <span id="year"></span> SA Culture Content</span></footer>
-<script src="js/script.js"></script>
+<footer><a class="footer-brand" href="index.html">SA CULTURE CONTENT</a><span><a href="tours.html">Tours</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a></span><span>© <span id="year"></span> SA Culture Content</span></footer>
 <script src="js/data.js"></script>
-<script src="js/main.js"></script>
-<script src="js/contact-form.js"></script>
+<script src="js/site.js"></script>
 </body>
 </html>

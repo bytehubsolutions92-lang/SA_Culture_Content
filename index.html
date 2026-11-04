@@ -5,17 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Explore Johannesburg, Soweto and South Africa with SA Culture Content. Discover guided tours, culture and unforgettable experiences.">
 <title>SA Culture Content | Johannesburg & Soweto Tours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+<link rel="canonical" href="https://www.example.com/index.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="SA Culture Content">
+<meta property="og:title" content="SA Culture Content | Johannesburg & Soweto Tours"><meta property="og:description" content="Explore Johannesburg, Soweto and South Africa with SA Culture Content. Discover guided tours, culture and unforgettable experiences.">
+<meta property="og:url" content="https://www.example.com/index.html"><meta property="og:image" content="https://www.example.com/images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["LocalBusiness","TouristInformationCenter"],"name":"SA Culture Content","description":"Guided cultural tours of Johannesburg, Soweto and Pretoria.","url":"https://www.example.com/","image":"https://www.example.com/images/logo.jpeg","telephone":"+27849081725","areaServed":["Johannesburg","Soweto","Pretoria"],"priceRange":"R800-R3500"}</script>
+
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
 <header class="site-header">
 <a class="brand" href="index.html" aria-label="SA Culture Content home">
-<img src="./images/logo.jpeg" class="brand-mark" alt="" width="48" height="48">
+<img src="images/logo.jpeg" class="brand-mark" alt="" width="48" height="48">
 <span><strong>SA CULTURE</strong><small>CONTENT</small></span>
 </a>
-<button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-<nav class="nav" aria-label="Main">
+<button type="button" class="menu-toggle" aria-controls="mainNav" aria-label="Open navigation" aria-expanded="false">☰</button>
+<nav class="nav" id="mainNav" aria-label="Main">
 <a href="index.html" aria-current="page">Home</a>
 <a href="tours.html">Tours &amp; Prices</a>
 <a href="about.html">About</a>
@@ -37,7 +46,7 @@
 </div>
 <div class="hero-art" aria-label="South African inspired geometric pattern">
 <div class="sun"></div><div class="art-ring"></div>
-<div class="art-caption"><strong>SA CULTURE</strong><span>Explore • Experience • Remember</span></div>
+<div class="art-caption"><strong>SA CULTURE</strong><span><a href="tours.html">Tours</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a></span></div>
 </div>
 </section>
 
@@ -55,7 +64,7 @@
 <section class="home-tours section-wrap">
 <div>
 <p class="eyebrow">Find your next experience</p>
-<h2>14 tours across <span>Gauteng</span></h2>
+<h2><span data-tour-count>14</span> tours across <span>Gauteng</span></h2>
 <p>Soweto, Johannesburg, Pretoria, the Cradle of Humankind, wildlife sanctuaries and more. Compare shared and single rates in one place.</p>
 </div>
 <div class="home-tours-actions">
@@ -63,6 +72,9 @@
 </div>
 </section>
 
+<div class="section-wrap trust-strip" id="trustStrip"></div>
+<section class="section-wrap" id="gallery" hidden><p class="eyebrow">Gallery</p><h2>Moments from our tours</h2><div class="gallery"></div></section>
+<section class="section-wrap" id="reviews" hidden><p class="eyebrow">Reviews</p><h2>What guests say</h2><div class="reviews"></div></section>
 <section class="experience section-wrap">
 <div class="experience-copy">
 <p class="eyebrow">Make the memories last</p>
@@ -82,9 +94,8 @@
 </div>
 </section>
 </main>
-<footer><a class="footer-brand" href="index.html">SA CULTURE CONTENT</a><span>Explore • Experience • Remember</span><span>© <span id="year"></span> SA Culture Content</span></footer>
-<script src="js/script.js"></script>
+<footer><a class="footer-brand" href="index.html">SA CULTURE CONTENT</a><span><a href="tours.html">Tours</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a></span><span>© <span id="year"></span> SA Culture Content</span></footer>
 <script src="js/data.js"></script>
-<script src="js/main.js"></script>
+<script src="js/site.js"></script>
 </body>
 </html>
