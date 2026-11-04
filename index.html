@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Local Guide &amp; Travel Photographer</title>
+  <meta name="description" content="Guided tours and photo sessions for visitors. See the best places with a local, and take home photos of yourself there.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top">Your Name</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav">
+      <a href="#tours">Tours</a>
+      <a href="#photos">Photo sessions</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a class="btn btn-small" href="#book">Book</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO: the viewfinder frame is the one bold idea on the page -->
+    <section class="hero" id="top">
+      <div class="viewfinder">
+        <span class="corner tl"></span><span class="corner tr"></span>
+        <span class="corner bl"></span><span class="corner br"></span>
+        <h1>See the city with a local. Keep the photos.</h1>
+        <p>Private walking and driving tours, with a photographer who shoots your visit as it happens.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#book">Plan your visit</a>
+          <a class="btn btn-ghost" href="#tours">See tours</a>
+        </div>
+        <p class="exif">Replace this block's background in css/style.css (.hero) with your best photo.</p>
+      </div>
+    </section>
+
+    <section class="section" id="tours">
+      <h2>Tours</h2>
+      <p class="lead">Every tour is private and paced for your group. Tell me what you like and I'll shape the day around it.</p>
+      <div class="grid" id="tour-list"><!-- built from js/data.js --></div>
+    </section>
+
+    <section class="section band" id="photos">
+      <h2>Photo sessions</h2>
+      <p class="lead">Add a photographer to any tour, or book a session on its own. You get edited photos within a few days.</p>
+      <div class="grid" id="package-list"><!-- built from js/data.js --></div>
+    </section>
+
+    <section class="section" id="gallery">
+      <h2>Gallery</h2>
+      <div class="filters" role="group" aria-label="Filter photos" id="filters"></div>
+      <div class="gallery" id="gallery-grid"></div>
+    </section>
+
+    <section class="section band about" id="about">
+      <div>
+        <h2>About</h2>
+        <p>Hi, I'm Your Name. I've guided visitors for X years and photographed hundreds of trips. Write two or three honest sentences here: where you grew up, what you love showing people, and what a day with you feels like.</p>
+        <ul class="facts">
+          <li>Languages: English, add yours</li>
+          <li>Groups of 1 to 8 people</li>
+          <li>Pickup from hotels and airports</li>
+        </ul>
+      </div>
+      <div class="portrait" role="img" aria-label="Portrait of your name">Add portrait: images/portrait.jpg</div>
+    </section>
+
+    <section class="section" id="reviews">
+      <h2>What visitors say</h2>
+      <div class="grid" id="review-list"></div>
+    </section>
+
+    <section class="section band" id="book">
+      <h2>Plan your visit</h2>
+      <p class="lead">Send your dates and ideas. I reply within a day.</p>
+      <form id="booking-form" novalidate>
+        <label>Your name <input name="name" required autocomplete="name"></label>
+        <label>Email <input name="email" type="email" required autocomplete="email"></label>
+        <label>Date <input name="date" type="date"></label>
+        <label>Group size <input name="size" type="number" min="1" max="20" value="2"></label>
+        <label>I'm interested in
+          <select name="interest" id="interest"></select>
+        </label>
+        <label class="full">Anything else? <textarea name="notes" rows="4"></textarea></label>
+        <button class="btn" type="submit">Send by email</button>
+        <a class="btn btn-ghost" id="whatsapp" href="#">Message on WhatsApp</a>
+        <p class="form-status" role="status" id="form-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Your Name. Local guide and photographer.</p>
+    <p><a id="mail-link" href="#">Email</a> · <a href="#" id="ig-link">Instagram</a></p>
+  </footer>
+
+  <dialog id="lightbox"><button class="close" aria-label="Close">Close</button><div id="lightbox-body"></div></dialog>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
