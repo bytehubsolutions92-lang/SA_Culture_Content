@@ -40,10 +40,72 @@
 </div>
 </div>
 </section>
+
+<section class="enquiry-section section-wrap" id="enquiry">
+<div class="enquiry-intro">
+<p class="eyebrow">Send an enquiry</p>
+<h2>Tell us about your trip</h2>
+<p>Fill in the details and we will open WhatsApp with your enquiry ready to send. We will reply to confirm availability and the final price.</p>
+</div>
+<form class="enquiry-form" id="enquiryForm" novalidate>
+<div class="field">
+<label for="f-name">Your name</label>
+<input id="f-name" name="name" type="text" autocomplete="name" required>
+</div>
+<div class="field">
+<label for="f-phone">Phone or WhatsApp number</label>
+<input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+</div>
+<div class="field field-wide">
+<label for="f-tour">Tour</label>
+<select id="f-tour" name="tour" required>
+<option value="">Choose a tour</option>
+<option value="Full Day Soweto Apartheid Museum and Lunch">Full Day Soweto Apartheid Museum and Lunch</option>
+<option value="Soweto Half Day Tour">Soweto Half Day Tour</option>
+<option value="Ultimate Johannesburg Tour">Ultimate Johannesburg Tour</option>
+<option value="Lion Park Half Day Tour">Lion Park Half Day Tour</option>
+<option value="Lesedi Cultural Village Tour">Lesedi Cultural Village Tour</option>
+<option value="Cradle of Humankind and Sterkfontein Caves Tour">Cradle of Humankind and Sterkfontein Caves Tour</option>
+<option value="Pretoria Half Day Tour">Pretoria Half Day Tour</option>
+<option value="Pretoria and Lion Park Tour">Pretoria and Lion Park Tour</option>
+<option value="Elephant and Monkey Sanctuaries Half Day Tour">Elephant and Monkey Sanctuaries Half Day Tour</option>
+<option value="Pretoria Diamond Mine Tour">Pretoria Diamond Mine Tour</option>
+<option value="Johannesburg City Tour">Johannesburg City Tour</option>
+<option value="Apartheid Museum Tour">Apartheid Museum Tour</option>
+<option value="Soweto and Lunch Tour">Soweto and Lunch Tour</option>
+<option value="Ann van Dyk Cheetah Centre Tour">Ann van Dyk Cheetah Centre Tour</option>
+<option value="Not sure yet / custom or photography request">Not sure yet / custom or photography request</option>
+</select>
+</div>
+<div class="field">
+<label for="f-date">Preferred date</label>
+<input id="f-date" name="date" type="date">
+</div>
+<div class="field">
+<label for="f-guests">Number of guests</label>
+<input id="f-guests" name="guests" type="number" min="1" max="50" value="1" inputmode="numeric" required>
+</div>
+<fieldset class="field field-wide rate-choice">
+<legend>Rate</legend>
+<label><input type="radio" name="rate" value="Shared" aria-describedby="rateHint"> Shared</label>
+<label><input type="radio" name="rate" value="Single" checked> Single</label>
+<p class="rate-hint" id="rateHint">The shared rate needs 2 or more guests.</p>
+</fieldset>
+<div class="field field-wide">
+<label for="f-message">Message (optional)</label>
+<textarea id="f-message" name="message" rows="4" placeholder="Hotel or pick-up area, questions, photography..."></textarea>
+</div>
+<div class="field-wide form-actions">
+<button class="button button-primary" type="submit">Send on WhatsApp</button>
+<p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+</div>
+</form>
+</section>
 </main>
 <footer><a class="footer-brand" href="index.html">SA CULTURE CONTENT</a><span>Explore • Experience • Remember</span><span>© <span id="year"></span> SA Culture Content</span></footer>
 <script src="js/script.js"></script>
 <script src="js/data.js"></script>
 <script src="js/main.js"></script>
+<script src="js/contact-form.js"></script>
 </body>
 </html>
