@@ -56,3 +56,28 @@
 .price-card strong{font-size:1.4rem;color:var(--green)}
 .currency-pick{font:inherit;padding:8px;border:1px solid #e4d6c1;border-radius:4px;background:#fff}
 @media(max-width:820px){.tour-page{grid-template-columns:1fr}.price-cards{position:static}}
+
+/* ---------- Trust, gallery, details ---------- */
+.trust-strip{display:flex;flex-wrap:wrap;gap:10px 24px;padding-block:18px;font-size:.9rem;font-weight:700;color:var(--green)}
+.trust-strip span:before{content:"✓ ";color:var(--orange)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-top:24px}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;display:block}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:24px}
+.review{background:#fffaf0;border:1px solid rgba(47,91,65,.18);border-radius:12px;padding:20px;margin:0}
+.review footer{background:none;padding:0;margin-top:10px;color:var(--muted);font-size:.85rem;display:block}
+.tour-meta{display:block;font-size:12px;color:var(--muted);font-weight:500;margin-top:3px}
+.hero-art.has-photo{background-size:cover;background-position:center}
+.hero-art.has-photo>*{display:none}
+.hero-art.has-photo .art-caption{display:block}
+
+.float-wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;background:#25d366;color:#fff;font-weight:800;font-size:14px;text-decoration:none;padding:12px 18px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.about-photo{width:min(260px,100%);height:auto;border-radius:12px;display:block;margin:0 0 16px}
+.faq{padding-block:clamp(32px,6vw,64px)}.faq details{border-bottom:1px solid #e4d6c1;padding:14px 0}.faq summary{font-weight:700;cursor:pointer}.faq p{margin:8px 0 0;color:var(--muted)}
+.crumbs{font-size:.9rem;color:var(--muted);margin:0 0 8px}.crumbs a{color:var(--green)}
+.tour-page{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:clamp(24px,5vw,56px);padding-block:clamp(24px,5vw,56px);align-items:start}
+.tour-facts{display:grid;gap:10px;margin:20px 0}.tour-facts div{display:flex;gap:12px}.tour-facts dt{font-weight:700;min-width:100px}.tour-facts dd{margin:0}
+.price-cards{display:grid;gap:12px;position:sticky;top:96px}.price-card{background:#fffaf0;border:1px solid rgba(47,91,65,.18);border-radius:12px;padding:16px;display:flex;justify-content:space-between;align-items:center}
+.price-card strong{font-size:1.4rem;color:var(--green)}
+.currency-pick{font:inherit;padding:8px;border:1px solid #e4d6c1;border-radius:4px;background:#fff}
+@media(max-width:820px){.tour-page{grid-template-columns:1fr}.price-cards{position:static}}
+#gallery,#reviews{padding-top:clamp(32px,5vw,56px)}
